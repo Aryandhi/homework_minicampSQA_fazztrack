@@ -1,6 +1,10 @@
 # BDD
 🍱 Url https://taufanfadhilah.github.io/react-gallery/
-🍱 Test case and Test Report https://docs.google.com/spreadsheets/d/1yyQPDvxmSLZhqAdogw2b5bxyKHTwgqoqwBD1cqNzVsQ/edit?usp=sharing
+
+🍱 Test case and Test Report 
+
+https://docs.google.com/spreadsheets/d/1yyQPDvxmSLZhqAdogw2b5bxyKHTwgqoqwBD1cqNzVsQ/edit?usp=sharing
+
 ✔ Positif Criteria
 
 🔥 Negatif Criteria
