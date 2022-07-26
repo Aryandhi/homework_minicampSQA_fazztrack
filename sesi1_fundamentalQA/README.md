@@ -25,6 +25,16 @@ title "React Gallery"
 **WHEN** user tidak menginputkan email dan password atau mengiputkan data login yang salah,
 **THEN** sistem akan menampilkan alert "login failed" dan tetap berada dihalaman login.
 
+## 👉 Sebagai User dapat melakukan update password
+✔ **GIVEN** User berada dihalaman login,
+**WHEN** user klik "forgot password ?",
+**THEN** sistem akan menampilkan halaman update password
+
+## 👉 Sebagai User dapat melakukan registrasi
+✔ **GIVEN** User berada dihalaman login,
+**WHEN** user klik "Don't have an account yet?",
+**THEN** sistem akan menampilkan halaman registrasi
+
 ## 👉 Sebagai User dapat upload photo
 ✔ **GIVEN** User berada dihalaman dashboard,
 **WHEN** user menginputkan url image, 
@@ -34,7 +44,7 @@ title "React Gallery"
 **AND** menampilkan image dan jumlah photo
 
 ✔ **GIVEN** User berada dihalaman dashboard,
-**WHEN** user menginputkan url image yang kedua atau < 1, 
+**WHEN** user menginputkan url image yang kedua atau > 1, 
 **AND** input caption,
 **AND** klik button publish,
 **THEN** sistem akan menampilkan alert "publish", 
@@ -50,4 +60,13 @@ title "React Gallery"
 **WHEN** user menginputkan url website (bukan image),
 **AND** menginputkan caption,
 **AND** user klik button publish,
-**THEN** sistem akan menampilkan alert "publish !" tetapi tidak menampilkan photo
+**THEN** sistem akan menampilkan alert "can't publish !",
+**AND** sistem tidak menampilkan photo. 
+
+## 👉 Sebagai User dapat logout dari dashboard
+
+✔ **GIVEN** User berada dihalaman dashboard,
+**WHEN** user klik logout,
+**THEN** user akan close dari sistem dan kembali ke halaman login
+
+
