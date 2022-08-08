@@ -20,11 +20,11 @@ function getUser(inputName) {
     .set('Content-type', 'application/json')
 }
 
-function postUser(bodyRequest) {
+function postUser(requestBody) {
   return URL.post(`/v1/users`)
     .set('Connection', 'keep-alive')
     .set('Content-type', 'application/json')
-    .send(bodyRequest)
+    .send(requestBody)
 }
 
 module.exports = {
