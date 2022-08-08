@@ -34,8 +34,10 @@ describe('| GET By Name | /v1/users?name=', async()=> {
     responseApi = await api.getUser(paramsName);
     bodyData = responseApi.body;
     expect(responseApi.status).to.equal(200);
-    expect(bodyData.data[0].firstName).to.equal(paramsName);
 
+    for(let i = 0; i < bodyData.data.length; i += 1) {
+      expect(bodyData.data[0].firstName).to.equal(paramsName);
+    }
     
     // expect(bodyData.data[0].firstName.toLowerCase()).to.equal('Arief');
     // console.log("status code: ", responseApi.status);
