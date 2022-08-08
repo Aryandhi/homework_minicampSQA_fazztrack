@@ -1,5 +1,6 @@
 const expect = require('chai').expect;
 const api = require('../api/user-endpoint');
+const dataPostUser = require('../testdata/dataPostUser');
 
 // describe('| GET By Name | /v1/users?name=', async()=> {
 //   let responseApi;
@@ -51,28 +52,15 @@ describe('| POST | /v1/users', async()=> {
   let bodyData;
 
   it('WHEN registered user with valid data', async()=> {
-    let firstName = "rahma";
+    let propertiFirstName = "Feri";
 
-    const dataRequest = {
-      "id": "34534",
-      "firstName": firstName,
-      "lastName": "setiawan",
-      "age": 24,
-      "occupation": "mahasiswa",
-      "nationality": "indo banget",
-      "hobbies": [
-        "ketak-ketik"
-      ],
-      "gender": "MALE",
-      "createdDate": "2022-08-08T13:27:59.580Z",
-      "updatedDate": "2022-08-08T13:27:59.580Z"
-    };
+    const dataRequest = dataPostUser.dataPost(propertiFirstName);
     responseApi = await api.postUser(dataRequest);
     console.log(responseApi.status);
     console.log(responseApi.body);
 
     // for check value of firstName
     bodyData = responseApi.body;
-    expect(bodyData.firstName).to.equal(firstName);
+    expect(bodyData.firstName).to.equal(propertiFirstName);
   })
 })
