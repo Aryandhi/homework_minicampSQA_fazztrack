@@ -10,7 +10,12 @@ function getUserStatic() {
 
 // search user use params dinamis
 function getUser(inputName) {
-  return URL.get(`/v1/users?name=${inputName}`)
+  return URL.get(`/v1/users`)
+    .query(
+      {
+        name: inputName,
+      }
+    )
     .set('Connection', 'keep-alive')
     .set('Content-type', 'application/json')
 }
