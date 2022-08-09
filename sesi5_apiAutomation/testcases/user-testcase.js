@@ -1,6 +1,7 @@
 const expect = require('chai').expect;
 const api = require('../api/user-endpoint');
 const dataPostUser = require('../testdata/dataPostUser');
+const scenario = require('../scenarios/create-user');
 
 // describe('| GET By Name | /v1/users?name=', async()=> {
 //   let responseApi;
@@ -47,12 +48,12 @@ const dataPostUser = require('../testdata/dataPostUser');
 //   })
 // });
 
-describe('| POST | /v1/users', async()=> {
+describe(`${scenario.scenarioTest.description}`, async()=> {
   let responseApi;
   let bodyData;
 
-  it('WHEN registered user with valid data', async()=> {
-    let propertiFirstName = "Feri";
+  it(`${scenario.scenarioTest.positive.case1}`, async()=> {
+    let propertiFirstName = "Rahmad";
 
     const dataRequest = dataPostUser.dataPost(propertiFirstName);
     responseApi = await api.postUser(dataRequest);
