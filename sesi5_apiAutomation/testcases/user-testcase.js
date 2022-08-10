@@ -2,6 +2,7 @@ const expect = require('chai').expect;
 const api = require('../api/user-endpoint');
 const dataPostUser = require('../testdata/dataPostUser');
 const scenario = require('../scenarios/create-user');
+const requestBody = require('../data/dataPostUser.json');
 
 // describe('| GET By Name | /v1/users?name=', async()=> {
 //   let responseApi;
@@ -53,10 +54,12 @@ describe(`${scenario.scenarioTest.description}`, async()=> {
   let bodyData;
 
   it(`${scenario.scenarioTest.positive.case1}`, async()=> {
-    let propertiFirstName = "Darma";
+    let propertiFirstName = "Cahyo";
 
-    const dataRequest = dataPostUser.dataPost(propertiFirstName);
-    responseApi = await api.postUser(dataRequest);
+    // const dataRequest = dataPostUser.dataPost(propertiFirstName);
+    // responseApi = await api.postUser(dataRequest);
+
+    responseApi = await api.postUser(requestBody);
     console.log(responseApi.status);
     console.log(responseApi.body);
 
