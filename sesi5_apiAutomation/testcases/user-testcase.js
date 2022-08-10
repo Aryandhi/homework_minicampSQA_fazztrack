@@ -53,7 +53,7 @@ describe(`${scenario.scenarioTest.description}`, async()=> {
   let bodyData;
 
   it(`${scenario.scenarioTest.positive.case1}`, async()=> {
-    let propertiFirstName = "Rahmad";
+    let propertiFirstName = "Darma";
 
     const dataRequest = dataPostUser.dataPost(propertiFirstName);
     responseApi = await api.postUser(dataRequest);
