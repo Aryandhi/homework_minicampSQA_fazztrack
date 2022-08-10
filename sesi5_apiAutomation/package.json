@@ -10,6 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.6",
+    "chai-like": "^1.1.1",
+    "chai-things": "^0.2.0",
     "mocha": "^10.0.0",
     "supertest": "^6.2.4"
   }
