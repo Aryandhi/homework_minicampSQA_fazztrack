@@ -1,0 +1,174 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-10T06:33:08.707Z",
+    "end": "2022-08-10T06:33:09.343Z",
+    "duration": 636,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "49e84d5b-93ee-4d36-9931-1d17e530321f",
+      "title": "",
+      "fullFile": "H:\\SQA Tech\\homework_minicampSQA_fazztrack\\sesi5_apiAutomation\\testcases\\search-user.js",
+      "file": "\\testcases\\search-user.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e46897b2-8c60-495e-9e9d-a3c53f02cd8b",
+          "title": "[@searching-hooks] Search User API Test use hooks",
+          "fullFile": "H:\\SQA Tech\\homework_minicampSQA_fazztrack\\sesi5_apiAutomation\\testcases\\search-user.js",
+          "file": "\\testcases\\search-user.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"[@searching-hooks] Search User API Test use hooks\"",
+              "fullTitle": "[@searching-hooks] Search User API Test use hooks \"before all\" hook in \"[@searching-hooks] Search User API Test use hooks\"",
+              "timedOut": false,
+              "duration": 582,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "console.log(\"before\");\nlet responseApi = await api.postUser(requestBody);\nexpect(responseApi.status).to.equal(200);",
+              "err": {},
+              "uuid": "47310725-fcc1-4667-b32e-466ff283a76a",
+              "parentUUID": "e46897b2-8c60-495e-9e9d-a3c53f02cd8b",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook in \"[@searching-hooks] Search User API Test use hooks\"",
+              "fullTitle": "[@searching-hooks] Search User API Test use hooks \"before each\" hook in \"[@searching-hooks] Search User API Test use hooks\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "console.log(\"before each\");",
+              "err": {},
+              "uuid": "7ae327fb-4687-4d76-9f72-ed8aee11cc32",
+              "parentUUID": "e46897b2-8c60-495e-9e9d-a3c53f02cd8b",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"[@searching-hooks] Search User API Test use hooks\"",
+              "fullTitle": "[@searching-hooks] Search User API Test use hooks \"after all\" hook in \"[@searching-hooks] Search User API Test use hooks\"",
+              "timedOut": false,
+              "duration": 6,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "console.log(\"after\");",
+              "err": {},
+              "uuid": "161cb34d-dd18-414f-bdc8-4b68f5b45e64",
+              "parentUUID": "e46897b2-8c60-495e-9e9d-a3c53f02cd8b",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook in \"[@searching-hooks] Search User API Test use hooks\"",
+              "fullTitle": "[@searching-hooks] Search User API Test use hooks \"after each\" hook in \"[@searching-hooks] Search User API Test use hooks\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "console.log(\"after each\");",
+              "err": {},
+              "uuid": "ce644c3f-0fea-4a90-972c-408ecc5faff7",
+              "parentUUID": "e46897b2-8c60-495e-9e9d-a3c53f02cd8b",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "[@search-user-hooks] WHEN search user with valid keyword",
+              "fullTitle": "[@searching-hooks] Search User API Test use hooks [@search-user-hooks] WHEN search user with valid keyword",
+              "timedOut": false,
+              "duration": 31,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let keyword = 'agus';\nlet responseApi = await api.getUser(keyword);\nexpect(responseApi.status).to.equal(200);\n// untuk validasi struktur json dan tipe data sesuai API kontrak\nexpect(responseApi.body).has.jsonSchema(jsonSchemaFile);",
+              "err": {},
+              "uuid": "7481dff3-07a1-450f-998e-7d3453ab65f4",
+              "parentUUID": "e46897b2-8c60-495e-9e9d-a3c53f02cd8b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7481dff3-07a1-450f-998e-7d3453ab65f4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 31,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
