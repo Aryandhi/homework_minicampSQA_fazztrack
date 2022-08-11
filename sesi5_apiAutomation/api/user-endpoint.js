@@ -27,8 +27,23 @@ function postUser(requestBody) {
     .send(requestBody)
 }
 
+function putUser(requestBody) {
+  return URL.put(`/v1/users`)
+    .set('Connection', 'keep-alive')
+    .set('Content-type', 'application/json')
+    .send(requestBody)
+}
+
+function getByIdUser(id) {
+  return URL.get(`/v1/users/${id}`)
+    .set('Connection', 'keep-alive')
+    .set('Content-type', 'application/json')
+}
+
 module.exports = {
   getUserStatic,
   getUser,
   postUser,
+  putUser,
+  getByIdUser,
 };
