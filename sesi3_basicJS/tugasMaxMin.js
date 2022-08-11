@@ -1,35 +1,25 @@
 /*
 * buat array
 * looping index array.length ( index = 5 )
-* cek index, dan jumlahkah semua value kecuali value 
-dalam index yang dilooping
+* jumlahkan semua elemen dalam array
+* hasil penjumlahan elemen, 
+dikurangi dengan nilai array pada index yg sedang dilooping
 * tampung disuatu wadah, kemudian cari nilai max dan min
  */
 
 let store = [1, 2, 3, 4, 5];
-let sum = [];
+let result = [];
 let temp = 0;
+let tempResult;
+// console.log(store.reduce((acc, curr) => acc + curr))
 for ( let i = 0; i < store.length; i++) {
-  if (i === 0) {
-    temp = store[1] + store[2] + store[3] + store[4];
-    sum.push(temp);
-  } else if (i === 1) {
-    temp = store[0] + store[2] + store[3] + store[4];
-    sum.push(temp);
-  }else if (i === 2) {
-    temp = store[0] + store[1] + store[3] + store[4];
-    sum.push(temp);
-  }else if (i === 3) {
-    temp = store[0] + store[1] + store[2] + store[4];
-    sum.push(temp);
-  }else {
-    temp = store[0] + store[1] + store[2] + store[3];
-    sum.push(temp);
-  }
+  temp = store.reduce((acc, curr) => acc + curr);
+  tempResult = temp - store[i];
+  result.push(tempResult);
 }
 // 14, 13, 12, 11, 10
-console.log("Array Sum = "+sum);
-let Maximal = Math.max.apply(null, sum);
-let Minimal = Math.min.apply(null, sum);
+console.log("Array Sum = "+result);
+let Maximal = Math.max.apply(null, result);
+let Minimal = Math.min.apply(null, result);
 console.log("Nilai maximal : "+Maximal);
 console.log("Nilai minimal : "+Minimal);

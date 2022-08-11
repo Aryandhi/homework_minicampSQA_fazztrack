@@ -32,11 +32,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://reqres.in/api/users?page=2",
-					"protocol": "https",
+					"raw": "{{URL_TEST}}/api/users?page=2",
 					"host": [
-						"reqres",
-						"in"
+						"{{URL_TEST}}"
 					],
 					"path": [
 						"api",
@@ -92,11 +90,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://reqres.in/api/users",
-					"protocol": "https",
+					"raw": "{{URL_TEST}}/api/users",
 					"host": [
-						"reqres",
-						"in"
+						"{{URL_TEST}}"
 					],
 					"path": [
 						"api",
@@ -120,7 +116,7 @@
 							"pm.test(\"test Has property\", ()=> {\r",
 							"    const response = pm.response.json();\r",
 							"    pm.expect(response).to.have.property(\"name\", \"arief\");\r",
-							"    pm.expect(response).to.have.property(\"job\", \"QA Test\");\r",
+							"    pm.expect(response).to.have.property(\"job\", \"QA\");\r",
 							"})\r",
 							""
 						],
@@ -141,11 +137,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://reqres.in/api/users/2",
-					"protocol": "https",
+					"raw": "{{URL_TEST}}/api/users/2",
 					"host": [
-						"reqres",
-						"in"
+						"{{URL_TEST}}"
 					],
 					"path": [
 						"api",
@@ -186,11 +180,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://reqres.in/api/users/2",
-					"protocol": "https",
+					"raw": "{{URL_TEST}}/api/users/2",
 					"host": [
-						"reqres",
-						"in"
+						"{{URL_TEST}}"
 					],
 					"path": [
 						"api",
@@ -248,6 +240,33 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL_TEST",
+			"value": "https://reqres.in",
+			"type": "string"
 		}
 	]
 }
