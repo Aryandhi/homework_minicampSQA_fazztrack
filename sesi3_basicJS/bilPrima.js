@@ -1,7 +1,12 @@
-let bilBulat = 3;
-
-if (bilBulat == 2 || bilBulat == 3) {
-  return console.log("true");
-} if (bilBulat % 2 == 0 || bilBulat % 3 == 0) {
-  return console.log("false");
+function isPrime (num) {
+  let x= 0;
+  for(let i = 2; i<= Math.floor(num/2); i++) {
+    x++
+    if (num%i === 0) {
+      return false
+    } 
+  }
+  return true
 }
+
+console.log(isPrime(6));
