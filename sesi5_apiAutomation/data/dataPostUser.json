@@ -1,14 +1,14 @@
 {
-  "id": "34323",
-  "firstName": "Agus",
-  "lastName": "windiarto",
+  "id": "string",
+  "firstName": "Winda",
+  "lastName": "Agustina",
   "age": 24,
-  "occupation": "mahasiswa",
-  "nationality": "indo banget",
+  "occupation": "QA",
+  "nationality": "INDONESIA",
   "hobbies": [
-    "ketak-ketik"
+    "Healing"
   ],
-  "gender": "MALE",
-  "createdDate": "2022-08-08T13:27:59.580Z",
-  "updatedDate": "2022-08-08T13:27:59.580Z"
+  "gender": "FEMALE",
+  "createdDate": "2022-08-10T07:34:18.316Z",
+  "updatedDate": ""
 }
