@@ -1,12 +1,13 @@
 {
-  "id": "cdd75748-22de-4055-975d-519379cf794f",
-  "firstName": "Winda",
-  "lastName": "Agustina",
+  "firstName": "Aryandhi",
+  "lastName": "Windiarto",
   "age": 23,
-  "occupation": "QA Junior",
-  "nationality": "INDONESIA Bangeet",
-  "hobbies": [],
-  "gender": "FEMALE",
+  "occupation": "QA Junior Test",
+  "nationality": "INDONESIA Bangeets",
+  "hobbies": [
+    "Healing"
+  ],
+  "gender": "MALE",
   "createdDate": "2022-08-10T08:08:36.019Z",
   "updatedDate": "2022-08-10T08:08:36.019Z"
 }
